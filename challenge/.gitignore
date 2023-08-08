@@ -1,0 +1,10 @@
+### Java ###
+target/
+
+### Misc ###
+.allure/
+.idea/
+.allure-report/
+.allure-results/
+.vscode/
+.DS_Store
