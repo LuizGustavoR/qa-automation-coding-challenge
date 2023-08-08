@@ -13,12 +13,26 @@ but at the automation level.
 Because those tests are the highest priority since they reproduce the users real behavior.
 - Why did I choose to use selenium instead of cypress?\
 Because cypress can't work with multiple tabs, selenium can.
+- The tests show 4 implemented tests because of the outline scenario, but in reality, there are only 3 tests.
+- This file works as the 'challenge' project readme file.
+- What could get better?\
+The chromedriver, both chromedrivers being used (macos and windows) are for a specific chrome version, adding a docker-compose file to this project would avoid the chromedriver version problem.
 ---
 
 ## How to set up and run the automated tests
 
-
-
+- Java 11 version.
+- Maven.
+- Chrome browser (if macos version 115, if windows version 114).
+- Clone the repository.
+- Start the project.\
+`yarn start`
+- Open the project 'challenge' in your IntelliJ IDEA.\
+`/challenge`
+- Open the terminal and inside the 'challenge' folder run the command:\
+`mvn clean test allure:report`
+- Reports are generated in the folder:\
+`/challenge/target/site/index.html`
 
 ---
 
@@ -63,8 +77,7 @@ Then the repo information name and description is displayed for each found repo
 Scenario: Verify Search and open repo link
 Given I open the application
 When I perform a search with a valid repo name "torvalds"
-And I click on the repo link of each found repo
-Then the repo link opens the repo page in a new tab
+Then the repo links opens the repo page in a new tab
 ```
 
 ## End2End(Smoke) Tests - Low Priority
