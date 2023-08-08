@@ -25,12 +25,15 @@ The chromedriver, both chromedrivers being used (macos and windows) are for a sp
 - Maven.
 - Chrome browser (if macos version 115, if windows version 114).
 - Clone the repository.
-- Start the project.\
-`yarn start`
-- Open the project 'challenge' in your IntelliJ IDEA.\
-`/challenge`
-- Open the terminal and inside the 'challenge' folder run the command:\
-`mvn clean test allure:report`
+- Open the terminal and:
+  - Download the dependencies.\
+  `yarn`
+  - Start the project.\
+  `yarn start`
+  - Go to the folder 'challenge'\
+  `/challenge`
+  - Inside the 'challenge' folder run the command:\
+  `mvn clean test allure:report`
 - Reports are generated in the folder:\
 `/challenge/target/site/index.html`
 
